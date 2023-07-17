@@ -1,0 +1,35 @@
+{ 
+  "manifest_version": 3,
+  "name": "Verify Results",
+  "description": "Verify websites to assist yourself in future searches",
+  "version": "0.1",
+  "version_name": "alpha",
+  "icons": {
+    "16": "icons/16.png",
+    "19": "icons/19.png",
+    "38": "icons/38.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://*.google.com/*"],
+  "action": {
+    "default_icon": {
+      "16": "icons/16.png",
+      "24": "icons/24.png",
+      "32": "icons/32.png"
+    },
+    "default_title": "Verify results",
+    "default_popup": "popup/popup.html"
+  },
+  "options_page": "options/options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.google.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
