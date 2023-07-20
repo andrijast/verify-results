@@ -18,9 +18,12 @@ Verified websites are marked and pushed at top of the google results page.
 
 ## ToDo
 
-- [ ] add support for bookmarked webpages
-- [ ] fancy "verified" and "bookmarked" tags
+- [x] add support for bookmarked webpages
+- [x] fancy "verified" and "bookmarked" tags
+- [ ] add support for reading list webpages
 - [ ] fancy way to verify a website
 - [ ] organize and export verified websites
+- [ ] support for other search engines (duckduckgo, brave search, bing)
+- [ ] support for other browsers (firefox, safari)
 
 Feel free to use `Issues` and `Pull requests` to contribute.
